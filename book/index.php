@@ -18,11 +18,7 @@ $this->need('header.php');
             <h2 class="post-title" itemprop="name headline">
                 <a><?php $this->title() ?></a>
             </h2>
-            <ul class="post-meta">
-                <li>
-                    <?php _e('分类: '); ?><?php $this->category(','); ?>
-                </li>
-            </ul>
+<?php _e('分类: '); ?><?php $this->category(','); ?>
             <div class="post-content" itemprop="articleBody">
                 <?php $this->content(); ?>
             </div>
