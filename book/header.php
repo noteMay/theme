@@ -5,6 +5,21 @@
     <meta charset="<?php $this->options->charset(); ?>">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>  
+        /* 在这里添加你的自定义CSS样式 */  
+        body {  
+            margin: 0;  
+            padding: 0;  
+            font-family: Arial, sans-serif;  
+        }  
+        .container {  
+            width: 100%;  
+            margin: 0 auto;  
+margin-top: 10px;
+        }  
+        .content {  
+        }  
+</style>
     <title><?php $this->archiveTitle([
             'category' => _t('分类 %s 下的文章'),
             'search'   => _t('包含关键字 %s 的文章'),
@@ -22,7 +37,6 @@
 </head>
 <body>
 <header>
-<p></p>
 <div class="container">
 <a<?php if ($this->is('index')): ?> class="current"<?php endif; ?>
                         href="<?php $this->options->siteUrl(); ?>"><?php _e('🏠首页'); ?></a>
