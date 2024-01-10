@@ -1,3 +1,18 @@
+<style>  
+        /* 在这里添加你的自定义CSS样式 */  
+        body {  
+            margin: 0;  
+            padding: 0;  
+            font-family: Arial, sans-serif;  
+        }  
+        .container {  
+            width: 100%;  
+            margin: 0 auto;  
+margin-top: 10px;
+        }  
+        .content {  
+        }  
+</style>
 <?php
 /**
  * theme for Typecho
@@ -12,7 +27,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
 ?>
 
-<div class="col-mb-12 col-8" id="main" role="main">
+<div>
     <?php while ($this->next()): ?>
 
             <h2 class="post-title" itemprop="name headline">
@@ -26,6 +41,4 @@ $this->need('header.php');
 
     <?php $this->pageNav('&laquo; 上一页', '下一页 &raquo;'); ?>
 </div><!-- end #main-->
-
-<?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
